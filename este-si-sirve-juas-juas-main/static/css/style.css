@@ -1,0 +1,144 @@
+.navbar {
+
+background-color: #1f5a34;
+border: none;
+
+}
+
+/* Centra el logo en el header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea arriba */
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-section,
+.right-section {
+    display: flex;
+    flex-direction: column; /* Elementos uno debajo del otro */
+    align-items: flex-end;  /* Alinea a la derecha */
+    gap: 10px;
+}
+/* Ajusta el tamaño del logo */
+.logo img {
+    height: 300px;
+    width: auto;
+}
+
+.button {
+    padding: 5px 10px;
+    
+    color: rgb(4, 22, 2);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+.search-bar {
+    padding: 5px;
+    border: 1px solid #fafafa;
+    border-radius: 5px;
+}
+
+.address {
+    font-size: 14px;
+}
+
+
+body {
+    background-color: #F3ECdF;
+}
+
+nav {
+    background-color: #06421c;
+    padding: 3px 10px;
+    text-align: center;
+    margin: 0%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /*que las cositas se acomoden en los celulares*/
+}
+
+nav ul li {
+    display: inline;
+    margin: 0px 55px;
+}
+
+nav ul li a {
+    color: #F3ECdF;
+    text-decoration: none;
+    font-weight: cursive;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+@media(max-width: 768px)
+
+/*ajustar para celulares*/
+    {
+    nav ul li {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 20px 0;
+    }
+}
+
+#carouselExampleSlidesOnly {
+    height: 500px;
+}
+
+#carouselExampleSlidesOnly .carousel-inner,
+#carouselExampleSlidesOnly .carousel-item,
+#carouselExampleSlidesOnly img {
+    height: 500px;
+}
+
+/* Solo afecta las imágenes del carrusel */
+#carouselExampleSlidesOnly img {
+    width: auto;
+    /* El ancho se ajusta automáticamente */
+    max-width: 150%;
+    /* No excede el ancho del contenedor */
+    height: 100%;
+    /* Ocupa todo el alto del carrusel */
+    object-fit: contain;
+    /* O usa 'cover' si prefieres recorte */
+    margin: 0;
+    /* Centra la imagen si es más angosta */
+    display: block;
+    border-radius: 10px;
+    background: linear-gradient(1900deg, #b4e1c5, #65d890);
+}
