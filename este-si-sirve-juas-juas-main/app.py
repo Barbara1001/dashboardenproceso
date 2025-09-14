@@ -88,7 +88,7 @@ def registro():
         try:
             cur.execute("""INSERT INTO usuarios (nombres, apellidos, correo, password) VALUES (%s, %s, %s, %s)""", (nombres, apellidos, correo, hash))
             mysql.connection.commit() #confirma los cambios en la base de datos
-            flash ("su usuario ha sido regidtrado exitosamente")
+            flash ("su usuario ha sido registrado exitosamente")
             return redirect(url_for('login'))
         except:
             flash("este corrreo ya esta registrado")
@@ -160,4 +160,5 @@ def dashboard():
 
 
 if __name__ =="__main__": #verifica si el archivo se ejecuta directamente
+
     app.run(port=5000,debug=True) #permite ver errores detalladamente y recarga e servidor automaticamente cunado se hacen cambios
