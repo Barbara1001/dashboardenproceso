@@ -147,7 +147,7 @@ def reset(token):
 
     return render_template('reiniciar.html', token=token)
 
-app.route('/dashboard') #ruta para el dashboard
+@app.route('/dashboard') #ruta para el dashboard
 def dashboard():
     if 'usuario' not in session:
         flash("Por favor, inicia sesión para acceder al dashboard")
@@ -162,3 +162,4 @@ def dashboard():
 if __name__ =="__main__": #verifica si el archivo se ejecuta directamente
 
     app.run(port=5000,debug=True) #permite ver errores detalladamente y recarga e servidor automaticamente cunado se hacen cambios
+
